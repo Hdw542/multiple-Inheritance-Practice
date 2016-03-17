@@ -1,1 +1,6 @@
 c:\users\hadi\documents\visual studio 2012\Projects\multipleInheritance\multipleInheritance\obj\Debug\multipleInheritance.csprojResolveAssemblyReference.cache
+c:\users\hadi\documents\visual studio 2012\Projects\multipleInheritance\multipleInheritance\bin\Debug\multipleInheritance.exe.config
+c:\users\hadi\documents\visual studio 2012\Projects\multipleInheritance\multipleInheritance\bin\Debug\multipleInheritance.exe
+c:\users\hadi\documents\visual studio 2012\Projects\multipleInheritance\multipleInheritance\bin\Debug\multipleInheritance.pdb
+c:\users\hadi\documents\visual studio 2012\Projects\multipleInheritance\multipleInheritance\obj\Debug\multipleInheritance.exe
+c:\users\hadi\documents\visual studio 2012\Projects\multipleInheritance\multipleInheritance\obj\Debug\multipleInheritance.pdb

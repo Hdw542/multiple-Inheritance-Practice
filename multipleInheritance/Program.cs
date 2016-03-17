@@ -16,6 +16,7 @@ namespace inheritance
     {
         protected float length; 
         protected float width;
+        protected float height;
         // setting length
         public void setLength(float len)
         {
@@ -25,9 +26,15 @@ namespace inheritance
         public void setWidth(float wid)
         {
             width = wid;
-        }  
+        }
+        // setting height
+        public void setHeight(float hei)
+        {
+            height = hei;
+        }
     }
     
+    /*
     class secondBase : baseClass
     {
         protected float height;
@@ -37,12 +44,21 @@ namespace inheritance
             height = hei;
         }
     }
+     */
+    public interface secondBase  // in C# multiple inheritance cannot be done by having 2 base class and 1 derived class so we use interface in C# for inheritance
+    {
+        float cost(float area);
+    }
 
-    class derivedClass : secondBase, baseClass   // multiple inheritance as derived class inherits from two other classes
+    class derivedClass : baseClass, secondBase    // multiple inheritance as derived class inherits from two other classes
     {
         public float getArea()
         {
             return (length * width * height);
+        }
+        public float cost(float area)
+        {
+            return area * 5; //to test expected cost = 8*5=40
         }
     }
 
@@ -54,8 +70,9 @@ namespace inheritance
             obj.setLength(2);
             obj.setWidth(2);
             obj.setHeight(2);
-            obj.getArea(); // expected output 2*2*2=8
-            Console.Out.WriteLine("Area = " + obj.getArea());
+            float area = obj.getArea(); // expected output 2*2*2=8
+            Console.Out.WriteLine("Area = " + area);
+            Console.Out.WriteLine("Cost = " + obj.cost(area)); // expected cost = 8*5=40
             Console.ReadLine();
         }
     }
